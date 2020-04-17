@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FAFavoriteViewController : UIViewController
 
+@property (strong,nonatomic) UITableView *table;
+@property (strong,nonatomic) NSArray     *content;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "FAFavoriteViewController.h"
 
 @interface SceneDelegate ()
 
@@ -16,6 +17,15 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+    
+    
+    
+    FAFavoriteViewController *viewController = [[FAFavoriteViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController: viewController];
+    self.window.rootViewController = navigationController;
+
+    
+    
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).

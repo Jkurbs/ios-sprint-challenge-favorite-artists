@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		6DC6E9CB2449FEC20009994C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9CA2449FEC20009994C /* AppDelegate.m */; };
 		6DC6E9CE2449FEC20009994C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9CD2449FEC20009994C /* SceneDelegate.m */; };
-		6DC6E9D12449FEC20009994C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9D02449FEC20009994C /* ViewController.m */; };
+		6DC6E9D12449FEC20009994C /* FAFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9D02449FEC20009994C /* FAFavoriteViewController.m */; };
 		6DC6E9D42449FEC20009994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC6E9D22449FEC20009994C /* Main.storyboard */; };
 		6DC6E9D62449FEC40009994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC6E9D52449FEC40009994C /* Assets.xcassets */; };
 		6DC6E9D92449FEC40009994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC6E9D72449FEC40009994C /* LaunchScreen.storyboard */; };
 		6DC6E9DC2449FEC40009994C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9DB2449FEC40009994C /* main.m */; };
+		6DC6E9E4244A04590009994C /* FAAddFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */; };
+		6DE334D2244A09A400050DAC /* FADetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D1244A09A400050DAC /* FADetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,17 @@
 		6DC6E9CA2449FEC20009994C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6DC6E9CC2449FEC20009994C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		6DC6E9CD2449FEC20009994C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		6DC6E9CF2449FEC20009994C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DC6E9D02449FEC20009994C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DC6E9CF2449FEC20009994C /* FAFavoriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAFavoriteViewController.h; sourceTree = "<group>"; };
+		6DC6E9D02449FEC20009994C /* FAFavoriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAFavoriteViewController.m; sourceTree = "<group>"; };
 		6DC6E9D32449FEC20009994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC6E9D52449FEC40009994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC6E9D82449FEC40009994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DC6E9DA2449FEC40009994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC6E9DB2449FEC40009994C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DC6E9E2244A04590009994C /* FAAddFavoriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAAddFavoriteViewController.h; sourceTree = "<group>"; };
+		6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAAddFavoriteViewController.m; sourceTree = "<group>"; };
+		6DE334D0244A09A400050DAC /* FADetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FADetailsViewController.h; sourceTree = "<group>"; };
+		6DE334D1244A09A400050DAC /* FADetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FADetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +67,11 @@
 		6DC6E9C82449FEC20009994C /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				6DC6E9E5244A045E0009994C /* ViewController */,
 				6DC6E9C92449FEC20009994C /* AppDelegate.h */,
 				6DC6E9CA2449FEC20009994C /* AppDelegate.m */,
 				6DC6E9CC2449FEC20009994C /* SceneDelegate.h */,
 				6DC6E9CD2449FEC20009994C /* SceneDelegate.m */,
-				6DC6E9CF2449FEC20009994C /* ViewController.h */,
-				6DC6E9D02449FEC20009994C /* ViewController.m */,
 				6DC6E9D22449FEC20009994C /* Main.storyboard */,
 				6DC6E9D52449FEC40009994C /* Assets.xcassets */,
 				6DC6E9D72449FEC40009994C /* LaunchScreen.storyboard */,
@@ -74,6 +79,19 @@
 				6DC6E9DB2449FEC40009994C /* main.m */,
 			);
 			path = FavoriteArtists;
+			sourceTree = "<group>";
+		};
+		6DC6E9E5244A045E0009994C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6DC6E9CF2449FEC20009994C /* FAFavoriteViewController.h */,
+				6DC6E9D02449FEC20009994C /* FAFavoriteViewController.m */,
+				6DC6E9E2244A04590009994C /* FAAddFavoriteViewController.h */,
+				6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */,
+				6DE334D0244A09A400050DAC /* FADetailsViewController.h */,
+				6DE334D1244A09A400050DAC /* FADetailsViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC6E9D12449FEC20009994C /* ViewController.m in Sources */,
+				6DC6E9D12449FEC20009994C /* FAFavoriteViewController.m in Sources */,
 				6DC6E9CB2449FEC20009994C /* AppDelegate.m in Sources */,
 				6DC6E9DC2449FEC40009994C /* main.m in Sources */,
+				6DC6E9E4244A04590009994C /* FAAddFavoriteViewController.m in Sources */,
+				6DE334D2244A09A400050DAC /* FADetailsViewController.m in Sources */,
 				6DC6E9CE2449FEC20009994C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
