@@ -11,6 +11,8 @@
 #import "FAArtist.h"
 #import "FAArtist+NSJSONSerialization.h"
 
+static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json/1/search.php";
+
 @interface FAArtistController() {}
 
 @property (nonatomic) NSMutableArray *internalSavedArtists;
@@ -18,6 +20,8 @@
 @end
 
 @implementation FAArtistController
+
+
 
 - (instancetype)init {
     self = [super init];
@@ -84,7 +88,6 @@
         }
     }
 }
-static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json/1/search.php";
 
 - (void)searchForArtistWithName:(NSString *)name completion:(void (^)(FAArtist *artist, NSError *error))completion {
     
