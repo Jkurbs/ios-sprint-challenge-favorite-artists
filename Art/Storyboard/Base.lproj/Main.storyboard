@@ -7,15 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add New Artist-->
+        <!--Add New artist-->
         <scene sceneID="d7j-uL-e96">
             <objects>
-                <viewController id="mXU-MZ-a97" customClass="NPTArtistDetailViewController" sceneMemberID="viewController">
+                <viewController id="mXU-MZ-a97" customClass="FAArtistDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZGX-wq-yKH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Justin Bieber..." translatesAutoresizingMaskIntoConstraints="NO" id="Nt1-i4-YXp">
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Nt1-i4-YXp">
                                 <rect key="frame" x="0.0" y="140" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -59,7 +59,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OdK-1I-9vJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New Artist" id="qmW-ic-nwz">
+                    <navigationItem key="navigationItem" title="Add New artist" id="qmW-ic-nwz">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="8nS-sZ-lQC">
                             <connections>
                                 <action selector="savePressed:" destination="mXU-MZ-a97" id="eeP-NH-VvK"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="2751" y="100"/>
         </scene>
-        <!--Favorite Artists-->
+        <!--Favorite FavoriteArtistists-->
         <scene sceneID="san-OJ-GEm">
             <objects>
-                <tableViewController id="CCn-sK-n84" customClass="NPTFavoriteArtistTableViewController" sceneMemberID="viewController">
+                <tableViewController id="CCn-sK-n84" customClass="FAFavoriteArtistTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VSr-ei-sX0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
                             <outlet property="delegate" destination="CCn-sK-n84" id="DmK-K3-U9e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favorite Artists" id="fJP-YE-5we">
+                    <navigationItem key="navigationItem" title="Favorite FavoriteArtistists" id="fJP-YE-5we">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="oPK-6F-hXW">
                             <connections>
                                 <action selector="addPressed:" destination="CCn-sK-n84" id="IXz-Zg-5ES"/>

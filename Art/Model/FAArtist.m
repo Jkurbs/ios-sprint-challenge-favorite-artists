@@ -6,9 +6,9 @@
 //  Copyright © 2020 Nick Nguyen. All rights reserved.
 //
 
-#import "NPTArtist.h"
+#import "FAArtist.h"
 
-@implementation NPTArtist
+@implementation FAArtist
 
 
 

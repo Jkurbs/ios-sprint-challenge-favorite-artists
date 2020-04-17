@@ -6,12 +6,12 @@
 //  Copyright © 2020 Nick Nguyen. All rights reserved.
 //
 
-#import "NPTArtistDetailViewController.h"
+#import "FAArtistDetailViewController.h"
 #import "NPTLog.h"
-#import "NPTArtist.h"
-#import "NPTArtistController.h"
+#import "FAArtist.h"
+#import "FAArtistController.h"
 
-@interface NPTArtistDetailViewController ()
+@interface FAArtistDetailViewController ()
 
 
 @property (strong, nonatomic) IBOutlet UILabel *artistNameLabel;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation NPTArtistDetailViewController
+@implementation FAArtistDetailViewController
 
 
 
@@ -56,7 +56,7 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
-    [self.artistController searchForArtistWithName:searchBar.text completion:^(NPTArtist *artist, NSError *error) {
+    [self.artistController searchForArtistWithName:searchBar.text completion:^(FAArtist *artist, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"Artist: %@, Error: %@", artist.name, error);
             self.artist = artist;

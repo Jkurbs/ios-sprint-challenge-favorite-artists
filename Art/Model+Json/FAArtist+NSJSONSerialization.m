@@ -5,10 +5,12 @@
 //  Created by Nick Nguyen on 4/17/20.
 //  Copyright © 2020 Nick Nguyen. All rights reserved.
 //
-#import "NPTArtist.h"
-#import "NPTArtist+NSJSONSerialization.h"
 
-@implementation NPTArtist (NSJSONSerialization)
+
+#import "FAArtist.h"
+#import "FAArtist+NSJSONSerialization.h"
+
+@implementation FAArtist (NSJSONSerialization)
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     NSString *name = dictionary[@"strArtist"];

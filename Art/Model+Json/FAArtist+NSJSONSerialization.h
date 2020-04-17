@@ -6,9 +6,9 @@
 //  Copyright © 2020 Nick Nguyen. All rights reserved.
 //
 
-@class NPTArtist;
+@class FAArtist;
 
-@interface NPTArtist (NSJSONSerialization)
+@interface FAArtist (NSJSONSerialization)
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)toDictionary;

@@ -9,41 +9,41 @@
 /* Begin PBXBuildFile section */
 		B6E5FBE4244A002F00B6863B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBE3244A002F00B6863B /* AppDelegate.m */; };
 		B6E5FBE7244A002F00B6863B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBE6244A002F00B6863B /* SceneDelegate.m */; };
-		B6E5FBEA244A002F00B6863B /* NPTFavoriteArtistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBE9244A002F00B6863B /* NPTFavoriteArtistTableViewController.m */; };
+		B6E5FBEA244A002F00B6863B /* FAFavoriteArtistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBE9244A002F00B6863B /* FAFavoriteArtistTableViewController.m */; };
 		B6E5FBED244A002F00B6863B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E5FBEB244A002F00B6863B /* Main.storyboard */; };
 		B6E5FBEF244A003100B6863B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E5FBEE244A003100B6863B /* Assets.xcassets */; };
 		B6E5FBF2244A003100B6863B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E5FBF0244A003100B6863B /* LaunchScreen.storyboard */; };
 		B6E5FBF5244A003100B6863B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBF4244A003100B6863B /* main.m */; };
-		B6E5FBFE244A046B00B6863B /* NPTArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBFD244A046B00B6863B /* NPTArtist.m */; };
-		B6E5FC0C244A092F00B6863B /* NPTArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC0B244A092F00B6863B /* NPTArtistDetailViewController.m */; };
+		B6E5FBFE244A046B00B6863B /* FAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBFD244A046B00B6863B /* FAArtist.m */; };
+		B6E5FC0C244A092F00B6863B /* FAArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */; };
 		B6E5FC13244A0B1800B6863B /* NPTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC12244A0B1800B6863B /* NPTLog.m */; };
-		B6E5FC31244A321E00B6863B /* NPTArtist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC30244A321E00B6863B /* NPTArtist+NSJSONSerialization.m */; };
-		B6E5FC35244A3A3D00B6863B /* NPTArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC34244A3A3D00B6863B /* NPTArtistController.m */; };
+		B6E5FC31244A321E00B6863B /* FAArtist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC30244A321E00B6863B /* FAArtist+NSJSONSerialization.m */; };
+		B6E5FC35244A3A3D00B6863B /* FAArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC34244A3A3D00B6863B /* FAArtistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6E5FBDF244A002F00B6863B /* Art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Art.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E5FBDF244A002F00B6863B /* FavoriteFavoriteArtistist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteFavoriteArtistist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5FBE2244A002F00B6863B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6E5FBE3244A002F00B6863B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B6E5FBE5244A002F00B6863B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		B6E5FBE6244A002F00B6863B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B6E5FBE8244A002F00B6863B /* NPTFavoriteArtistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPTFavoriteArtistTableViewController.h; sourceTree = "<group>"; };
-		B6E5FBE9244A002F00B6863B /* NPTFavoriteArtistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPTFavoriteArtistTableViewController.m; sourceTree = "<group>"; };
+		B6E5FBE8244A002F00B6863B /* FAFavoriteArtistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAFavoriteArtistTableViewController.h; sourceTree = "<group>"; };
+		B6E5FBE9244A002F00B6863B /* FAFavoriteArtistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAFavoriteArtistTableViewController.m; sourceTree = "<group>"; };
 		B6E5FBEC244A002F00B6863B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6E5FBEE244A003100B6863B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E5FBF1244A003100B6863B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E5FBF3244A003100B6863B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E5FBF4244A003100B6863B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6E5FBFC244A046B00B6863B /* NPTArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPTArtist.h; sourceTree = "<group>"; };
-		B6E5FBFD244A046B00B6863B /* NPTArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPTArtist.m; sourceTree = "<group>"; };
-		B6E5FC0A244A092F00B6863B /* NPTArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPTArtistDetailViewController.h; sourceTree = "<group>"; };
-		B6E5FC0B244A092F00B6863B /* NPTArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPTArtistDetailViewController.m; sourceTree = "<group>"; };
+		B6E5FBFC244A046B00B6863B /* FAArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtist.h; sourceTree = "<group>"; };
+		B6E5FBFD244A046B00B6863B /* FAArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtist.m; sourceTree = "<group>"; };
+		B6E5FC0A244A092F00B6863B /* FAArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtistDetailViewController.h; sourceTree = "<group>"; };
+		B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtistDetailViewController.m; sourceTree = "<group>"; };
 		B6E5FC11244A0B1800B6863B /* NPTLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPTLog.h; sourceTree = "<group>"; };
 		B6E5FC12244A0B1800B6863B /* NPTLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPTLog.m; sourceTree = "<group>"; };
-		B6E5FC2F244A321800B6863B /* NPTArtist+NSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NPTArtist+NSJSONSerialization.h"; sourceTree = "<group>"; };
-		B6E5FC30244A321E00B6863B /* NPTArtist+NSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NPTArtist+NSJSONSerialization.m"; sourceTree = "<group>"; };
-		B6E5FC33244A3A3600B6863B /* NPTArtistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTArtistController.h; sourceTree = "<group>"; };
-		B6E5FC34244A3A3D00B6863B /* NPTArtistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTArtistController.m; sourceTree = "<group>"; };
+		B6E5FC2F244A321800B6863B /* FAArtist+NSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAArtist+NSJSONSerialization.h"; sourceTree = "<group>"; };
+		B6E5FC30244A321E00B6863B /* FAArtist+NSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAArtist+NSJSONSerialization.m"; sourceTree = "<group>"; };
+		B6E5FC33244A3A3600B6863B /* FAArtistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAArtistController.h; sourceTree = "<group>"; };
+		B6E5FC34244A3A3D00B6863B /* FAArtistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAArtistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 		B6E5FBE0244A002F00B6863B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FBDF244A002F00B6863B /* Art.app */,
+				B6E5FBDF244A002F00B6863B /* FavoriteFavoriteArtistist.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		B6E5FBE1244A002F00B6863B /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FC32244A3A2A00B6863B /* Model Controller */,
-				B6E5FC10244A0B0800B6863B /* Helper */,
-				B6E5FC02244A085000B6863B /* Category */,
-				B6E5FBFB244A03BF00B6863B /* Resources */,
+				B6E5FC02244A085000B6863B /* Model+Json */,
 				B6E5FC03244A086000B6863B /* View Controllers */,
+				B6E5FBFB244A03BF00B6863B /* Resources */,
+				B6E5FC10244A0B0800B6863B /* Helper */,
 				B6E5FC04244A086D00B6863B /* Storyboard */,
+				B6E5FC32244A3A2A00B6863B /* Model Controller */,
 				B6E5FBF3244A003100B6863B /* Info.plist */,
 				B6E5FBF4244A003100B6863B /* main.m */,
 				B6E5FC05244A087900B6863B /* Model */,
@@ -101,22 +101,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B6E5FC02244A085000B6863B /* Category */ = {
+		B6E5FC02244A085000B6863B /* Model+Json */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FC2F244A321800B6863B /* NPTArtist+NSJSONSerialization.h */,
-				B6E5FC30244A321E00B6863B /* NPTArtist+NSJSONSerialization.m */,
+				B6E5FC2F244A321800B6863B /* FAArtist+NSJSONSerialization.h */,
+				B6E5FC30244A321E00B6863B /* FAArtist+NSJSONSerialization.m */,
 			);
-			path = Category;
+			path = "Model+Json";
 			sourceTree = "<group>";
 		};
 		B6E5FC03244A086000B6863B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FBE8244A002F00B6863B /* NPTFavoriteArtistTableViewController.h */,
-				B6E5FBE9244A002F00B6863B /* NPTFavoriteArtistTableViewController.m */,
-				B6E5FC0A244A092F00B6863B /* NPTArtistDetailViewController.h */,
-				B6E5FC0B244A092F00B6863B /* NPTArtistDetailViewController.m */,
+				B6E5FBE8244A002F00B6863B /* FAFavoriteArtistTableViewController.h */,
+				B6E5FBE9244A002F00B6863B /* FAFavoriteArtistTableViewController.m */,
+				B6E5FC0A244A092F00B6863B /* FAArtistDetailViewController.h */,
+				B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -133,8 +133,8 @@
 		B6E5FC05244A087900B6863B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FBFC244A046B00B6863B /* NPTArtist.h */,
-				B6E5FBFD244A046B00B6863B /* NPTArtist.m */,
+				B6E5FBFC244A046B00B6863B /* FAArtist.h */,
+				B6E5FBFD244A046B00B6863B /* FAArtist.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,8 +151,8 @@
 		B6E5FC32244A3A2A00B6863B /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FC33244A3A3600B6863B /* NPTArtistController.h */,
-				B6E5FC34244A3A3D00B6863B /* NPTArtistController.m */,
+				B6E5FC33244A3A3600B6863B /* FAArtistController.h */,
+				B6E5FC34244A3A3D00B6863B /* FAArtistController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6E5FBDE244A002F00B6863B /* Art */ = {
+		B6E5FBDE244A002F00B6863B /* FavoriteArtist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6E5FBF8244A003100B6863B /* Build configuration list for PBXNativeTarget "Art" */;
+			buildConfigurationList = B6E5FBF8244A003100B6863B /* Build configuration list for PBXNativeTarget "FavoriteArtist" */;
 			buildPhases = (
 				B6E5FBDB244A002F00B6863B /* Sources */,
 				B6E5FBDC244A002F00B6863B /* Frameworks */,
@@ -172,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = Art;
+			name = FavoriteArtist;
 			productName = Art;
-			productReference = B6E5FBDF244A002F00B6863B /* Art.app */;
+			productReference = B6E5FBDF244A002F00B6863B /* FavoriteFavoriteArtistist.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B6E5FBDA244A002F00B6863B /* Build configuration list for PBXProject "Art" */;
+			buildConfigurationList = B6E5FBDA244A002F00B6863B /* Build configuration list for PBXProject "FavoriteArtist" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6E5FBDE244A002F00B6863B /* Art */,
+				B6E5FBDE244A002F00B6863B /* FavoriteArtist */,
 			);
 		};
 /* End PBXProject section */
@@ -227,15 +227,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E5FBEA244A002F00B6863B /* NPTFavoriteArtistTableViewController.m in Sources */,
+				B6E5FBEA244A002F00B6863B /* FAFavoriteArtistTableViewController.m in Sources */,
 				B6E5FBE4244A002F00B6863B /* AppDelegate.m in Sources */,
 				B6E5FBF5244A003100B6863B /* main.m in Sources */,
 				B6E5FC13244A0B1800B6863B /* NPTLog.m in Sources */,
 				B6E5FBE7244A002F00B6863B /* SceneDelegate.m in Sources */,
-				B6E5FC31244A321E00B6863B /* NPTArtist+NSJSONSerialization.m in Sources */,
-				B6E5FC0C244A092F00B6863B /* NPTArtistDetailViewController.m in Sources */,
-				B6E5FBFE244A046B00B6863B /* NPTArtist.m in Sources */,
-				B6E5FC35244A3A3D00B6863B /* NPTArtistController.m in Sources */,
+				B6E5FC31244A321E00B6863B /* FAArtist+NSJSONSerialization.m in Sources */,
+				B6E5FC0C244A092F00B6863B /* FAArtistDetailViewController.m in Sources */,
+				B6E5FBFE244A046B00B6863B /* FAArtist.m in Sources */,
+				B6E5FC35244A3A3D00B6863B /* FAArtistController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,14 +376,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4939K9623X;
+				DEVELOPMENT_TEAM = GF728A45JE;
 				INFOPLIST_FILE = Art/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nick.Art;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kurbs.FavoriteArtist;
+				PRODUCT_NAME = FavoriteFavoriteArtistist;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -393,14 +393,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4939K9623X;
+				DEVELOPMENT_TEAM = GF728A45JE;
 				INFOPLIST_FILE = Art/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nick.Art;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kurbs.FavoriteArtist;
+				PRODUCT_NAME = FavoriteFavoriteArtistist;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -408,7 +408,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6E5FBDA244A002F00B6863B /* Build configuration list for PBXProject "Art" */ = {
+		B6E5FBDA244A002F00B6863B /* Build configuration list for PBXProject "FavoriteArtist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6E5FBF6244A003100B6863B /* Debug */,
@@ -417,7 +417,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6E5FBF8244A003100B6863B /* Build configuration list for PBXNativeTarget "Art" */ = {
+		B6E5FBF8244A003100B6863B /* Build configuration list for PBXNativeTarget "FavoriteArtist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6E5FBF9244A003100B6863B /* Debug */,

@@ -7,17 +7,17 @@
 //
 
 
-#import "NPTArtistController.h"
-#import "NPTArtist.h"
-#import "NPTArtist+NSJSONSerialization.h"
+#import "FAArtistController.h"
+#import "FAArtist.h"
+#import "FAArtist+NSJSONSerialization.h"
 
-@interface NPTArtistController() {}
+@interface FAArtistController() {}
 
 @property (nonatomic) NSMutableArray *internalSavedArtists;
 
 @end
 
-@implementation NPTArtistController
+@implementation FAArtistController
 
 - (instancetype)init {
     self = [super init];
@@ -32,13 +32,13 @@
     return [self.internalSavedArtists copy];
 }
 
-- (void)saveArtist:(NPTArtist *)artist {
+- (void)saveArtist:(FAArtist *)artist {
     NSLog(@"saveArtist");
     [self.internalSavedArtists addObject:artist];
     [self saveToPersistentStore];
 }
 
-- (void)removeArtist:(NPTArtist *)artist {
+- (void)removeArtist:(FAArtist *)artist {
     [self.internalSavedArtists removeObject:artist];
     [self saveToPersistentStore];
 }
@@ -55,7 +55,7 @@
     NSURL *url = [self persistentFileURL];
     NSMutableArray *artistsArray = [[NSMutableArray alloc] init];
     
-    for (NPTArtist *artist in self.internalSavedArtists) {
+    for (FAArtist *artist in self.internalSavedArtists) {
         NSDictionary *artistDict = [artist toDictionary];
         [artistsArray addObject:artistDict];
     }
@@ -79,14 +79,14 @@
     if (![artistsDictionary[@"artists"]  isEqual: @""]) {
         NSArray *artistDictionaries = artistsDictionary[@"artists"];
         for (NSDictionary *artistDictionary in artistDictionaries) {
-            NPTArtist *artist = [[NPTArtist alloc] initWithDictionary:artistDictionary];
+            FAArtist *artist = [[FAArtist alloc] initWithDictionary:artistDictionary];
             [self.internalSavedArtists addObject:artist];
         }
     }
 }
 static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json/1/search.php";
 
-- (void)searchForArtistWithName:(NSString *)name completion:(void (^)(NPTArtist *artist, NSError *error))completion {
+- (void)searchForArtistWithName:(NSString *)name completion:(void (^)(FAArtist *artist, NSError *error))completion {
     
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
     NSURLComponents *components = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES];
@@ -119,7 +119,7 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
         if (dictionary[@"artists"] != [NSNull null]) {
             NSArray *artistDictionaries = dictionary[@"artists"];
             NSDictionary *artistDictionary = artistDictionaries.firstObject;
-            NPTArtist *artist = [[NPTArtist alloc] initWithDictionary:artistDictionary];
+            FAArtist *artist = [[FAArtist alloc] initWithDictionary:artistDictionary];
             
             completion(artist, nil);
         }

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class NPTArtistController;
+@class FAArtistController;
 
-@interface NPTFavoriteArtistTableViewController : UITableViewController
+@interface FAFavoriteArtistTableViewController : UITableViewController
 
-@property NPTArtistController *controller;
+@property FAArtistController *controller;
 
 
 @end
