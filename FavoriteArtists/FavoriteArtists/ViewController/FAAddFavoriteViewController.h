@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FAArtistAPI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) UISearchBar *searchBar;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UITextView *infoTextView;
+
+@property (nonatomic) FAArtistAPI *artistAPI;
+
+- (void)setupViews;
+
+
 @end
+
+
+
 
 NS_ASSUME_NONNULL_END

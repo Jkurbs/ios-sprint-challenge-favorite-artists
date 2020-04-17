@@ -10,14 +10,32 @@
 
 @implementation FAArtist
 
-- (instancetype)initWithName:(NSDictionary *)dictionary {
 
+- (instancetype)initWithName:(NSString *)strArtist strBiographyEN:(NSString *)strBiographyEN intFormedYear:(NSNumber *)intFormedYear {
+    
     self = [super init];
     if (self) {
-        _name = self.name;
-        _biography = self.biography;
-        _year = self.year;
+        _strArtist = self.strArtist;
+        _strBiographyEN = self.strBiographyEN;
+        _intFormedYear = self.intFormedYear;
     }
+    return self;
+}
+
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    
+    NSDictionary *properties = dictionary[@"artists"];
+    
+    NSLog(@"PROPERTIES %@", properties);
+    
+    // All Objective-C collections must store objects (int, long, float are wrapped in NSNumber)
+    NSString *name = properties[@"strArtist"];
+    NSString *biography = properties[@"strBiographyEN"];
+    NSNumber *formedYear = properties[@"intFormedYear"];
+    
+    // return the object using the default init
+    self = [self initWithName:name strBiographyEN:biography intFormedYear: formedYear];
     return self;
 }
 

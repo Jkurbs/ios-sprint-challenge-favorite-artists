@@ -12,11 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FAArtist : NSObject
 
-@property (nonatomic, readonly) NSString *name;
-@property (nonatomic, readonly) NSString *biography;
-@property (nonatomic, readonly) int *year;
+@property (nonatomic, readonly, copy) NSString *strArtist;
+@property (nonatomic, readonly, copy) NSString *strBiographyEN;
+@property (nonatomic, readonly) NSNumber *intFormedYear;
 
-- (instancetype) initWithName: (NSDictionary *)dictionary;
+- (instancetype)initWithName:(NSString *)strArtist
+    strBiographyEN:(NSString *)strBiographyEN
+    intFormedYear: (NSNumber *)intFormedYear;
+
+- (instancetype) initWithDictionary: (NSDictionary *)dictionary;
 
 @end
 

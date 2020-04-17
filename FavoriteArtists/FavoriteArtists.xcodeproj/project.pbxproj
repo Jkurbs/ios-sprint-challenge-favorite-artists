@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D13F496244A22A400578613 /* FAArtistResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D13F495244A22A400578613 /* FAArtistResult.m */; };
+		6DC0F88A244A141C00B95B51 /* FAArtistAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0F889244A141C00B95B51 /* FAArtistAPI.m */; };
+		6DC0F899244A162200B95B51 /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0F893244A162200B95B51 /* LSIFileHelper.m */; };
+		6DC0F89A244A162200B95B51 /* LSILog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0F897244A162200B95B51 /* LSILog.m */; };
+		6DC0F89B244A162200B95B51 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0F898244A162200B95B51 /* LSIErrors.m */; };
 		6DC6E9CB2449FEC20009994C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9CA2449FEC20009994C /* AppDelegate.m */; };
 		6DC6E9CE2449FEC20009994C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9CD2449FEC20009994C /* SceneDelegate.m */; };
 		6DC6E9D12449FEC20009994C /* FAFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9D02449FEC20009994C /* FAFavoriteViewController.m */; };
@@ -17,16 +22,25 @@
 		6DC6E9E4244A04590009994C /* FAAddFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */; };
 		6DE334D2244A09A400050DAC /* FADetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D1244A09A400050DAC /* FADetailsViewController.m */; };
 		6DE334D6244A0B2E00050DAC /* FAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D5244A0B2E00050DAC /* FAArtist.m */; };
-		6DE334DA244A0E9D00050DAC /* ArtistAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D9244A0E9D00050DAC /* ArtistAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D13F493244A19F400578613 /* FAFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAFavoriteViewController.h; path = ../../../../../../.Trashes/501/FAFavoriteViewController.h; sourceTree = "<group>"; };
+		6D13F494244A22A400578613 /* FAArtistResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtistResult.h; sourceTree = "<group>"; };
+		6D13F495244A22A400578613 /* FAArtistResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtistResult.m; sourceTree = "<group>"; };
+		6DC0F888244A141C00B95B51 /* FAArtistAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtistAPI.h; sourceTree = "<group>"; };
+		6DC0F889244A141C00B95B51 /* FAArtistAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtistAPI.m; sourceTree = "<group>"; };
+		6DC0F893244A162200B95B51 /* LSIFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSIFileHelper.m; path = "../../../../../../../../Users/kurbs/Downloads/ios-guided-project-networking-in-objective-c-starter-iOS14-2/Quakes-Objc/LambdaSDK/LSIFileHelper.m"; sourceTree = "<group>"; };
+		6DC0F894244A162200B95B51 /* LSIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSIErrors.h; path = "../../../../../../../../Users/kurbs/Downloads/ios-guided-project-networking-in-objective-c-starter-iOS14-2/Quakes-Objc/LambdaSDK/LSIErrors.h"; sourceTree = "<group>"; };
+		6DC0F895244A162200B95B51 /* LSIFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSIFileHelper.h; path = "../../../../../../../../Users/kurbs/Downloads/ios-guided-project-networking-in-objective-c-starter-iOS14-2/Quakes-Objc/LambdaSDK/LSIFileHelper.h"; sourceTree = "<group>"; };
+		6DC0F896244A162200B95B51 /* LSILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSILog.h; path = "../../../../../../../../Users/kurbs/Downloads/ios-guided-project-networking-in-objective-c-starter-iOS14-2/Quakes-Objc/LambdaSDK/LSILog.h"; sourceTree = "<group>"; };
+		6DC0F897244A162200B95B51 /* LSILog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSILog.m; path = "../../../../../../../../Users/kurbs/Downloads/ios-guided-project-networking-in-objective-c-starter-iOS14-2/Quakes-Objc/LambdaSDK/LSILog.m"; sourceTree = "<group>"; };
+		6DC0F898244A162200B95B51 /* LSIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSIErrors.m; path = "../../../../../../../../Users/kurbs/Downloads/ios-guided-project-networking-in-objective-c-starter-iOS14-2/Quakes-Objc/LambdaSDK/LSIErrors.m"; sourceTree = "<group>"; };
 		6DC6E9C62449FEC20009994C /* FavoriteArtists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteArtists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC6E9C92449FEC20009994C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DC6E9CA2449FEC20009994C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6DC6E9CC2449FEC20009994C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		6DC6E9CD2449FEC20009994C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		6DC6E9CF2449FEC20009994C /* FAFavoriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAFavoriteViewController.h; sourceTree = "<group>"; };
 		6DC6E9D02449FEC20009994C /* FAFavoriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAFavoriteViewController.m; sourceTree = "<group>"; };
 		6DC6E9D32449FEC20009994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC6E9D52449FEC40009994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,8 +53,6 @@
 		6DE334D1244A09A400050DAC /* FADetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FADetailsViewController.m; sourceTree = "<group>"; };
 		6DE334D4244A0B2E00050DAC /* FAArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtist.h; sourceTree = "<group>"; };
 		6DE334D5244A0B2E00050DAC /* FAArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtist.m; sourceTree = "<group>"; };
-		6DE334D8244A0E9D00050DAC /* ArtistAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistAPI.h; sourceTree = "<group>"; };
-		6DE334D9244A0E9D00050DAC /* ArtistAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DC0F892244A160300B95B51 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6DC0F894244A162200B95B51 /* LSIErrors.h */,
+				6DC0F898244A162200B95B51 /* LSIErrors.m */,
+				6DC0F895244A162200B95B51 /* LSIFileHelper.h */,
+				6DC0F893244A162200B95B51 /* LSIFileHelper.m */,
+				6DC0F896244A162200B95B51 /* LSILog.h */,
+				6DC0F897244A162200B95B51 /* LSILog.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		6DC6E9BD2449FEC20009994C = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +98,7 @@
 		6DC6E9C82449FEC20009994C /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				6DC0F892244A160300B95B51 /* Helpers */,
 				6DE334D7244A0E7C00050DAC /* API */,
 				6DE334D3244A0B1100050DAC /* Model */,
 				6DC6E9E5244A045E0009994C /* ViewController */,
@@ -92,7 +118,7 @@
 		6DC6E9E5244A045E0009994C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6DC6E9CF2449FEC20009994C /* FAFavoriteViewController.h */,
+				6D13F493244A19F400578613 /* FAFavoriteViewController.h */,
 				6DC6E9D02449FEC20009994C /* FAFavoriteViewController.m */,
 				6DC6E9E2244A04590009994C /* FAAddFavoriteViewController.h */,
 				6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */,
@@ -107,6 +133,8 @@
 			children = (
 				6DE334D4244A0B2E00050DAC /* FAArtist.h */,
 				6DE334D5244A0B2E00050DAC /* FAArtist.m */,
+				6D13F494244A22A400578613 /* FAArtistResult.h */,
+				6D13F495244A22A400578613 /* FAArtistResult.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,8 +142,8 @@
 		6DE334D7244A0E7C00050DAC /* API */ = {
 			isa = PBXGroup;
 			children = (
-				6DE334D8244A0E9D00050DAC /* ArtistAPI.h */,
-				6DE334D9244A0E9D00050DAC /* ArtistAPI.m */,
+				6DC0F888244A141C00B95B51 /* FAArtistAPI.h */,
+				6DC0F889244A141C00B95B51 /* FAArtistAPI.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -190,14 +218,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC0F899244A162200B95B51 /* LSIFileHelper.m in Sources */,
+				6DC0F89A244A162200B95B51 /* LSILog.m in Sources */,
+				6DC0F88A244A141C00B95B51 /* FAArtistAPI.m in Sources */,
 				6DC6E9D12449FEC20009994C /* FAFavoriteViewController.m in Sources */,
+				6D13F496244A22A400578613 /* FAArtistResult.m in Sources */,
 				6DC6E9CB2449FEC20009994C /* AppDelegate.m in Sources */,
+				6DC0F89B244A162200B95B51 /* LSIErrors.m in Sources */,
 				6DC6E9DC2449FEC40009994C /* main.m in Sources */,
 				6DE334D6244A0B2E00050DAC /* FAArtist.m in Sources */,
 				6DC6E9E4244A04590009994C /* FAAddFavoriteViewController.m in Sources */,
 				6DE334D2244A09A400050DAC /* FADetailsViewController.m in Sources */,
 				6DC6E9CE2449FEC20009994C /* SceneDelegate.m in Sources */,
-				6DE334DA244A0E9D00050DAC /* ArtistAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

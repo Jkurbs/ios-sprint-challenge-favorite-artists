@@ -6,13 +6,23 @@
 //  Copyright © 2020 Kerby Jean. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "FAAddFavoriteViewController.h"
+#import "FAArtistAPI.h"
 
-@interface FAAddFavoriteViewController ()
+@interface FAAddFavoriteViewController () <UISearchBarDelegate, UISearchDisplayDelegate>
 
 @end
 
 @implementation FAAddFavoriteViewController
+
+// Lazy property
+- (FAArtistAPI *)artistAPI {
+    if (!_artistAPI) {
+        _artistAPI = [[FAArtistAPI alloc] init];
+    }
+    return _artistAPI;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +37,7 @@
     _searchBar.translatesAutoresizingMaskIntoConstraints = false;
     [_searchBar sizeToFit];
     _searchBar.placeholder = @"Search for artist";
+    _searchBar.delegate = self;
     [self.view addSubview: _searchBar];
     
     
@@ -56,10 +67,31 @@
     ];
 }
 
+- (void)setupViews {
+    
+    
+}
+
 - (IBAction)saveNewArtist:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:true];
 }
 
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Search button clicked");
+    NSString *name = searchBar.text;
+    [self.artistAPI fetchArtistWithName:name completionBlock:^(NSArray<FAArtist *> * _Nullable artists, NSError * _Nullable error) {
+        if (error) {
+                   NSLog(@"Error fetching quakes: %@", error);
+                   return;
+               }
+        
+        FAArtist *artist = artists.firstObject;
+        if (artist) {
+            NSLog(@"Quake mag: %@", artist.intFormedYear);
+        }
+    }];
+}
 /*
 #pragma mark - Navigation
 
