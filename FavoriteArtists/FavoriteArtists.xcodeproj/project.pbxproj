@@ -16,6 +16,8 @@
 		6DC6E9DC2449FEC40009994C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9DB2449FEC40009994C /* main.m */; };
 		6DC6E9E4244A04590009994C /* FAAddFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */; };
 		6DE334D2244A09A400050DAC /* FADetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D1244A09A400050DAC /* FADetailsViewController.m */; };
+		6DE334D6244A0B2E00050DAC /* FAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D5244A0B2E00050DAC /* FAArtist.m */; };
+		6DE334DA244A0E9D00050DAC /* ArtistAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE334D9244A0E9D00050DAC /* ArtistAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		6DC6E9E3244A04590009994C /* FAAddFavoriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAAddFavoriteViewController.m; sourceTree = "<group>"; };
 		6DE334D0244A09A400050DAC /* FADetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FADetailsViewController.h; sourceTree = "<group>"; };
 		6DE334D1244A09A400050DAC /* FADetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FADetailsViewController.m; sourceTree = "<group>"; };
+		6DE334D4244A0B2E00050DAC /* FAArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtist.h; sourceTree = "<group>"; };
+		6DE334D5244A0B2E00050DAC /* FAArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtist.m; sourceTree = "<group>"; };
+		6DE334D8244A0E9D00050DAC /* ArtistAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistAPI.h; sourceTree = "<group>"; };
+		6DE334D9244A0E9D00050DAC /* ArtistAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 		6DC6E9C82449FEC20009994C /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				6DE334D7244A0E7C00050DAC /* API */,
+				6DE334D3244A0B1100050DAC /* Model */,
 				6DC6E9E5244A045E0009994C /* ViewController */,
 				6DC6E9C92449FEC20009994C /* AppDelegate.h */,
 				6DC6E9CA2449FEC20009994C /* AppDelegate.m */,
@@ -92,6 +100,24 @@
 				6DE334D1244A09A400050DAC /* FADetailsViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6DE334D3244A0B1100050DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DE334D4244A0B2E00050DAC /* FAArtist.h */,
+				6DE334D5244A0B2E00050DAC /* FAArtist.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DE334D7244A0E7C00050DAC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6DE334D8244A0E9D00050DAC /* ArtistAPI.h */,
+				6DE334D9244A0E9D00050DAC /* ArtistAPI.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +193,11 @@
 				6DC6E9D12449FEC20009994C /* FAFavoriteViewController.m in Sources */,
 				6DC6E9CB2449FEC20009994C /* AppDelegate.m in Sources */,
 				6DC6E9DC2449FEC40009994C /* main.m in Sources */,
+				6DE334D6244A0B2E00050DAC /* FAArtist.m in Sources */,
 				6DC6E9E4244A04590009994C /* FAAddFavoriteViewController.m in Sources */,
 				6DE334D2244A09A400050DAC /* FADetailsViewController.m in Sources */,
 				6DC6E9CE2449FEC20009994C /* SceneDelegate.m in Sources */,
+				6DE334DA244A0E9D00050DAC /* ArtistAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
