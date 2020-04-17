@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  FavoriteArtists
+//  Art
 //
-//  Created by Kerby Jean on 4/17/20.
-//  Copyright © 2020 Kerby Jean. All rights reserved.
+//  Created by Nick Nguyen on 4/17/20.
+//  Copyright © 2020 Nick Nguyen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
