@@ -32,7 +32,7 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
 }
 
 
-- (NSArray *)savedArtists {
+- (NSArray *)artists {
     return [self.internalSavedArtists copy];
 }
 

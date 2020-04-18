@@ -14,11 +14,5 @@
 
 @property FAArtistController *controller;
 
-@property (strong, nonatomic) UISearchBar *searchBar;
-@property (strong, nonatomic) UILabel *titleLabel;
-@property (strong, nonatomic) UITextView *infoTextView;
-
-
-
 @end
 

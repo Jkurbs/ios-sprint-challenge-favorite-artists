@@ -13,10 +13,12 @@
 @implementation FAArtist (NSJSONSerialization)
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    
     NSString *name = dictionary[@"strArtist"];
     NSString *bio = dictionary[@"strBiographyEN"];
     NSLog(@"%@", dictionary[@"intFormedYear"]);
     NSString *yearNumber = dictionary[@"intFormedYear"];
+    
     if ([yearNumber isKindOfClass:[NSString class]] || [yearNumber isKindOfClass:[NSNumber class]]) {
         NSLog(@"%@", yearNumber);
         int year = [yearNumber intValue];
@@ -28,7 +30,9 @@
 }
 
 - (NSDictionary *)toDictionary {
+    
     NSNumber *yearFormed = [NSNumber numberWithInt:self.yearFormed];
+    
     NSDictionary *dictionary = @{
         @"strArtist" : self.name,
         @"intFormedYear" : yearFormed,

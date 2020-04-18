@@ -45,13 +45,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.controller.savedArtists.count;
+    return self.controller.artists.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ArtistCell" forIndexPath:indexPath];
     
-    FAArtist *artist = self.controller.savedArtists[indexPath.row];
+    FAArtist *artist = self.controller.artists[indexPath.row];
     cell.textLabel.text = artist.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%d",artist.yearFormed];
     
@@ -64,13 +64,13 @@
     detailVC.artistController = self.controller;
     
     if ([segue.identifier isEqualToString:@"CellSegue"]) {
-        FAArtist *artist = self.controller.savedArtists[indexPath.row];
+        FAArtist *artist = self.controller.artists[indexPath.row];
         detailVC.artist = artist;
     }
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        FAArtist *artist = self.controller.savedArtists[indexPath.row];
+        FAArtist *artist = self.controller.artists[indexPath.row];
         [self.controller removeArtist:artist];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
      

@@ -12,7 +12,7 @@
 
 @interface FAArtistController : NSObject
 
-@property (readonly, nonatomic) NSArray *savedArtists;
+@property (readonly, nonatomic) NSArray *artists;
 @property (readonly, nonatomic) FAArtist *currentArtist;
 
 - (void)loadFromPersistentStore;
