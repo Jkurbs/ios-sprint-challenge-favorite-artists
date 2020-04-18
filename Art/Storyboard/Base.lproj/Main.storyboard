@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="2751" y="100"/>
         </scene>
-        <!--Favorite FavoriteArtistists-->
+        <!--Artist-->
         <scene sceneID="san-OJ-GEm">
             <objects>
                 <tableViewController id="CCn-sK-n84" customClass="FAFavoriteArtistTableViewController" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArtCell" id="NbL-YI-Ard">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArtistCell" id="NbL-YI-Ard">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NbL-YI-Ard" id="q6M-H0-8P0">
@@ -103,7 +103,7 @@
                             <outlet property="delegate" destination="CCn-sK-n84" id="DmK-K3-U9e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favorite FavoriteArtistists" id="fJP-YE-5we">
+                    <navigationItem key="navigationItem" title="Artist" id="fJP-YE-5we">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="oPK-6F-hXW">
                             <connections>
                                 <action selector="addPressed:" destination="CCn-sK-n84" id="IXz-Zg-5ES"/>
