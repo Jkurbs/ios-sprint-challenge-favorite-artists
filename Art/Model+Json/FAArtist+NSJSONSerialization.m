@@ -28,10 +28,10 @@
 }
 
 - (NSDictionary *)toDictionary {
-    NSNumber *yearNum = [NSNumber numberWithInt:self.yearFormed];
+    NSNumber *yearFormed = [NSNumber numberWithInt:self.yearFormed];
     NSDictionary *dictionary = @{
         @"strArtist" : self.name,
-        @"intFormedYear" : yearNum,
+        @"intFormedYear" : yearFormed,
         @"strBiographyEN" : self.biography
     };
     return dictionary;
