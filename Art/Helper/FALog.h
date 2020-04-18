@@ -9,8 +9,8 @@
 
 #define USECUSTOMLOGS 1
 #if USECUSTOMLOGS
-#define NSLog LSILog
+#define NSLog FALog
 #endif
 
-void LSILog(NSString *format, ...);
+void FALog(NSString *format, ...);
 

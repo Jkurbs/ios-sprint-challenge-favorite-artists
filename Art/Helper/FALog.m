@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-void LSILog(NSString *format, ...) {
+void FALog(NSString *format, ...) {
     va_list args;
     va_start(args, format);
     NSString *stringWithNewline = [format stringByAppendingString:@"\n"];

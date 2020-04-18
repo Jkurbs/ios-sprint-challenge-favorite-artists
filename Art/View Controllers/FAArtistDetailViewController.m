@@ -7,7 +7,7 @@
 //
 
 #import "FAArtistDetailViewController.h"
-#import "NPTLog.h"
+#import "FALog.h"
 #import "FAArtist.h"
 #import "FAArtistController.h"
 

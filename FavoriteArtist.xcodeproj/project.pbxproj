@@ -16,7 +16,7 @@
 		B6E5FBF5244A003100B6863B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBF4244A003100B6863B /* main.m */; };
 		B6E5FBFE244A046B00B6863B /* FAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBFD244A046B00B6863B /* FAArtist.m */; };
 		B6E5FC0C244A092F00B6863B /* FAArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */; };
-		B6E5FC13244A0B1800B6863B /* NPTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC12244A0B1800B6863B /* NPTLog.m */; };
+		B6E5FC13244A0B1800B6863B /* FALog.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC12244A0B1800B6863B /* FALog.m */; };
 		B6E5FC31244A321E00B6863B /* FAArtist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC30244A321E00B6863B /* FAArtist+NSJSONSerialization.m */; };
 		B6E5FC35244A3A3D00B6863B /* FAArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC34244A3A3D00B6863B /* FAArtistController.m */; };
 /* End PBXBuildFile section */
@@ -38,8 +38,8 @@
 		B6E5FBFD244A046B00B6863B /* FAArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtist.m; sourceTree = "<group>"; };
 		B6E5FC0A244A092F00B6863B /* FAArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtistDetailViewController.h; sourceTree = "<group>"; };
 		B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtistDetailViewController.m; sourceTree = "<group>"; };
-		B6E5FC11244A0B1800B6863B /* NPTLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPTLog.h; sourceTree = "<group>"; };
-		B6E5FC12244A0B1800B6863B /* NPTLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPTLog.m; sourceTree = "<group>"; };
+		B6E5FC11244A0B1800B6863B /* FALog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FALog.h; sourceTree = "<group>"; };
+		B6E5FC12244A0B1800B6863B /* FALog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FALog.m; sourceTree = "<group>"; };
 		B6E5FC2F244A321800B6863B /* FAArtist+NSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAArtist+NSJSONSerialization.h"; sourceTree = "<group>"; };
 		B6E5FC30244A321E00B6863B /* FAArtist+NSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAArtist+NSJSONSerialization.m"; sourceTree = "<group>"; };
 		B6E5FC33244A3A3600B6863B /* FAArtistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAArtistController.h; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 		B6E5FC10244A0B0800B6863B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B6E5FC11244A0B1800B6863B /* NPTLog.h */,
-				B6E5FC12244A0B1800B6863B /* NPTLog.m */,
+				B6E5FC11244A0B1800B6863B /* FALog.h */,
+				B6E5FC12244A0B1800B6863B /* FALog.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 				B6E5FBEA244A002F00B6863B /* FAFavoriteArtistTableViewController.m in Sources */,
 				B6E5FBE4244A002F00B6863B /* AppDelegate.m in Sources */,
 				B6E5FBF5244A003100B6863B /* main.m in Sources */,
-				B6E5FC13244A0B1800B6863B /* NPTLog.m in Sources */,
+				B6E5FC13244A0B1800B6863B /* FALog.m in Sources */,
 				B6E5FBE7244A002F00B6863B /* SceneDelegate.m in Sources */,
 				B6E5FC31244A321E00B6863B /* FAArtist+NSJSONSerialization.m in Sources */,
 				B6E5FC0C244A092F00B6863B /* FAArtistDetailViewController.m in Sources */,
