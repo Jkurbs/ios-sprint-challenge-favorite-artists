@@ -12,8 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class FAArtistController;
 @class FAArtist;
 
-@interface FAArtistDetailViewController : UIViewController<UISearchBarDelegate,UISearchDisplayDelegate>
-
+@interface FADetailViewController : UIViewController<UISearchBarDelegate,UISearchDisplayDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property FAArtistController *artistController;

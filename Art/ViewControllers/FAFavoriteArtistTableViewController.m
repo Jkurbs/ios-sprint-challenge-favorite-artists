@@ -9,7 +9,7 @@
 #import "FAFavoriteArtistTableViewController.h"
 #import "FAArtistController.h"
 #import "FAArtist.h"
-#import "FAArtistDetailViewController.h"
+#import "FADetailViewController.h"
 
 @interface FAFavoriteArtistTableViewController ()
 
@@ -40,10 +40,6 @@
 }
 
 
-- (IBAction)addPressed:(UIBarButtonItem *)sender {
-    
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.controller.artists.count;
 }
@@ -60,7 +56,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    FAArtistDetailViewController *detailVC = segue.destinationViewController;
+    FADetailViewController *detailVC = segue.destinationViewController;
     detailVC.artistController = self.controller;
     
     if ([segue.identifier isEqualToString:@"CellSegue"]) {

@@ -10,7 +10,7 @@
         <!--Add New artist-->
         <scene sceneID="d7j-uL-e96">
             <objects>
-                <viewController id="mXU-MZ-a97" customClass="FAArtistDetailViewController" sceneMemberID="viewController">
+                <viewController id="mXU-MZ-a97" customClass="FADetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZGX-wq-yKH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="2751" y="100"/>
         </scene>
-        <!--Artist-->
+        <!--Artists-->
         <scene sceneID="san-OJ-GEm">
             <objects>
                 <tableViewController id="CCn-sK-n84" customClass="FAFavoriteArtistTableViewController" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
                             <outlet property="delegate" destination="CCn-sK-n84" id="DmK-K3-U9e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Artist" id="fJP-YE-5we">
+                    <navigationItem key="navigationItem" title="Artists" id="fJP-YE-5we">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="oPK-6F-hXW">
                             <connections>
                                 <action selector="addPressed:" destination="CCn-sK-n84" id="IXz-Zg-5ES"/>

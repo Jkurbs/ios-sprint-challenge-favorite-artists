@@ -21,8 +21,6 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
 
 @implementation FAArtistController
 
-
-
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -53,6 +51,22 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
     return [documentDirectory URLByAppendingPathComponent:fileName];
 }
 
+
+- (void)loadFromPersistentStore {
+    NSURL *url = [self fileURL];
+    
+    NSDictionary *artistsDictionary = [NSDictionary dictionaryWithContentsOfURL:url];
+    
+    if (![artistsDictionary[@"artists"]  isEqual: @""]) {
+        NSArray *artistDictionaries = artistsDictionary[@"artists"];
+        for (NSDictionary *artistDictionary in artistDictionaries) {
+            FAArtist *artist = [[FAArtist alloc] initWithDictionary:artistDictionary];
+            [self.internalSavedArtists addObject:artist];
+        }
+    }
+}
+
+
 - (void)saveToPersistentStore {
     NSError *saveError = nil;
     NSURL *url = [self fileURL];
@@ -71,20 +85,6 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
         return;
     } else {
         NSLog(@"Error saving artists: %@", saveError);
-    }
-}
-
-- (void)loadFromPersistentStore {
-    NSURL *url = [self fileURL];
-    
-    NSDictionary *artistsDictionary = [NSDictionary dictionaryWithContentsOfURL:url];
-    
-    if (![artistsDictionary[@"artists"]  isEqual: @""]) {
-        NSArray *artistDictionaries = artistsDictionary[@"artists"];
-        for (NSDictionary *artistDictionary in artistDictionaries) {
-            FAArtist *artist = [[FAArtist alloc] initWithDictionary:artistDictionary];
-            [self.internalSavedArtists addObject:artist];
-        }
     }
 }
 
@@ -127,6 +127,5 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
         }
     }] resume];
 }
-
 
 @end

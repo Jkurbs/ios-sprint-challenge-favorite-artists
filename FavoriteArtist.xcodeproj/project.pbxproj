@@ -15,7 +15,7 @@
 		B6E5FBF2244A003100B6863B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E5FBF0244A003100B6863B /* LaunchScreen.storyboard */; };
 		B6E5FBF5244A003100B6863B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBF4244A003100B6863B /* main.m */; };
 		B6E5FBFE244A046B00B6863B /* FAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FBFD244A046B00B6863B /* FAArtist.m */; };
-		B6E5FC0C244A092F00B6863B /* FAArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */; };
+		B6E5FC0C244A092F00B6863B /* FADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC0B244A092F00B6863B /* FADetailViewController.m */; };
 		B6E5FC13244A0B1800B6863B /* FALog.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC12244A0B1800B6863B /* FALog.m */; };
 		B6E5FC31244A321E00B6863B /* FAArtist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC30244A321E00B6863B /* FAArtist+NSJSONSerialization.m */; };
 		B6E5FC35244A3A3D00B6863B /* FAArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E5FC34244A3A3D00B6863B /* FAArtistController.m */; };
@@ -36,8 +36,8 @@
 		B6E5FBF4244A003100B6863B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6E5FBFC244A046B00B6863B /* FAArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtist.h; sourceTree = "<group>"; };
 		B6E5FBFD244A046B00B6863B /* FAArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtist.m; sourceTree = "<group>"; };
-		B6E5FC0A244A092F00B6863B /* FAArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAArtistDetailViewController.h; sourceTree = "<group>"; };
-		B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAArtistDetailViewController.m; sourceTree = "<group>"; };
+		B6E5FC0A244A092F00B6863B /* FADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FADetailViewController.h; sourceTree = "<group>"; };
+		B6E5FC0B244A092F00B6863B /* FADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FADetailViewController.m; sourceTree = "<group>"; };
 		B6E5FC11244A0B1800B6863B /* FALog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FALog.h; sourceTree = "<group>"; };
 		B6E5FC12244A0B1800B6863B /* FALog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FALog.m; sourceTree = "<group>"; };
 		B6E5FC2F244A321800B6863B /* FAArtist+NSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAArtist+NSJSONSerialization.h"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B6E5FC02244A085000B6863B /* Model+Json */,
-				B6E5FC03244A086000B6863B /* View Controllers */,
+				B6E5FC03244A086000B6863B /* ViewControllers */,
 				B6E5FC10244A0B0800B6863B /* Helpers */,
 				B6E5FC04244A086D00B6863B /* Storyboard */,
 				B6E5FC32244A3A2A00B6863B /* Model Controller */,
@@ -102,15 +102,15 @@
 			path = "Model+Json";
 			sourceTree = "<group>";
 		};
-		B6E5FC03244A086000B6863B /* View Controllers */ = {
+		B6E5FC03244A086000B6863B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				B6E5FBE8244A002F00B6863B /* FAFavoriteArtistTableViewController.h */,
 				B6E5FBE9244A002F00B6863B /* FAFavoriteArtistTableViewController.m */,
-				B6E5FC0A244A092F00B6863B /* FAArtistDetailViewController.h */,
-				B6E5FC0B244A092F00B6863B /* FAArtistDetailViewController.m */,
+				B6E5FC0A244A092F00B6863B /* FADetailViewController.h */,
+				B6E5FC0B244A092F00B6863B /* FADetailViewController.m */,
 			);
-			path = "View Controllers";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B6E5FC04244A086D00B6863B /* Storyboard */ = {
@@ -225,7 +225,7 @@
 				B6E5FC13244A0B1800B6863B /* FALog.m in Sources */,
 				B6E5FBE7244A002F00B6863B /* SceneDelegate.m in Sources */,
 				B6E5FC31244A321E00B6863B /* FAArtist+NSJSONSerialization.m in Sources */,
-				B6E5FC0C244A092F00B6863B /* FAArtistDetailViewController.m in Sources */,
+				B6E5FC0C244A092F00B6863B /* FADetailViewController.m in Sources */,
 				B6E5FBFE244A046B00B6863B /* FAArtist.m in Sources */,
 				B6E5FC35244A3A3D00B6863B /* FAArtistController.m in Sources */,
 			);

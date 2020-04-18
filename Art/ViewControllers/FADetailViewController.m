@@ -6,12 +6,12 @@
 //  Copyright © 2020 Nick Nguyen. All rights reserved.
 //
 
-#import "FAArtistDetailViewController.h"
+#import "FADetailViewController.h"
 #import "FALog.h"
 #import "FAArtist.h"
 #import "FAArtistController.h"
 
-@interface FAArtistDetailViewController ()
+@interface FADetailViewController ()
 
 
 @property (strong, nonatomic) IBOutlet UILabel *artistNameLabel;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation FAArtistDetailViewController
+@implementation FADetailViewController
 
 
 
