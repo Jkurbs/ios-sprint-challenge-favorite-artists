@@ -78,7 +78,7 @@
 			children = (
 				B6E5FC02244A085000B6863B /* Model+Json */,
 				B6E5FC03244A086000B6863B /* View Controllers */,
-				B6E5FC10244A0B0800B6863B /* Helper */,
+				B6E5FC10244A0B0800B6863B /* Helpers */,
 				B6E5FC04244A086D00B6863B /* Storyboard */,
 				B6E5FC32244A3A2A00B6863B /* Model Controller */,
 				B6E5FBF3244A003100B6863B /* Info.plist */,
@@ -131,13 +131,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B6E5FC10244A0B0800B6863B /* Helper */ = {
+		B6E5FC10244A0B0800B6863B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				B6E5FC11244A0B1800B6863B /* FALog.h */,
 				B6E5FC12244A0B1800B6863B /* FALog.m */,
 			);
-			path = Helper;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B6E5FC32244A3A2A00B6863B /* Model Controller */ = {
