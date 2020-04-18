@@ -78,27 +78,19 @@
 			children = (
 				B6E5FC02244A085000B6863B /* Model+Json */,
 				B6E5FC03244A086000B6863B /* View Controllers */,
-				B6E5FBFB244A03BF00B6863B /* Resources */,
 				B6E5FC10244A0B0800B6863B /* Helper */,
 				B6E5FC04244A086D00B6863B /* Storyboard */,
 				B6E5FC32244A3A2A00B6863B /* Model Controller */,
 				B6E5FBF3244A003100B6863B /* Info.plist */,
 				B6E5FBF4244A003100B6863B /* main.m */,
-				B6E5FC05244A087900B6863B /* Model */,
-			);
-			path = Art;
-			sourceTree = "<group>";
-		};
-		B6E5FBFB244A03BF00B6863B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
 				B6E5FBE2244A002F00B6863B /* AppDelegate.h */,
 				B6E5FBE3244A002F00B6863B /* AppDelegate.m */,
 				B6E5FBE5244A002F00B6863B /* SceneDelegate.h */,
 				B6E5FBE6244A002F00B6863B /* SceneDelegate.m */,
 				B6E5FBEE244A003100B6863B /* Assets.xcassets */,
+				B6E5FC05244A087900B6863B /* Model */,
 			);
-			path = Resources;
+			path = Art;
 			sourceTree = "<group>";
 		};
 		B6E5FC02244A085000B6863B /* Model+Json */ = {
