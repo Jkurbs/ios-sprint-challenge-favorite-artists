@@ -29,7 +29,7 @@
 
 - (IBAction)savePressed:(UIBarButtonItem *)sender {
   
-        [self.artistController saveArtist:self.artist];
+        [self.artistController saveToPersistence:self.artist];
         [self.navigationController popViewControllerAnimated:YES];
     
   
@@ -56,7 +56,7 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
-    [self.artistController searchForArtistWithName:searchBar.text completion:^(FAArtist *artist, NSError *error) {
+    [self.artistController searchWithName:searchBar.text completion:^(FAArtist *artist, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"Artist: %@, Error: %@", artist.name, error);
             self.artist = artist;

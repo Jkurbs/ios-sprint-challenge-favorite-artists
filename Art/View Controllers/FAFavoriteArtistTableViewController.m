@@ -71,7 +71,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         FAArtist *artist = self.controller.artists[indexPath.row];
-        [self.controller removeArtist:artist];
+        [self.controller removeFromPersistence:artist];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
      
     }

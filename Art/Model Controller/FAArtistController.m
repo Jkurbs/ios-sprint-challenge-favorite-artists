@@ -36,18 +36,17 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
     return [self.internalSavedArtists copy];
 }
 
-- (void)saveArtist:(FAArtist *)artist {
-    NSLog(@"saveArtist");
+- (void)saveToPersistence:(FAArtist *)artist {
     [self.internalSavedArtists addObject:artist];
     [self saveToPersistentStore];
 }
 
-- (void)removeArtist:(FAArtist *)artist {
+- (void)removeFromPersistence:(FAArtist *)artist {
     [self.internalSavedArtists removeObject:artist];
     [self saveToPersistentStore];
 }
 
-- (NSURL *)persistentFileURL {
+- (NSURL *)fileURL {
     
     NSURL *documentDirectory = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
     NSString *fileName = @"artists.json";
@@ -56,7 +55,7 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
 
 - (void)saveToPersistentStore {
     NSError *saveError = nil;
-    NSURL *url = [self persistentFileURL];
+    NSURL *url = [self fileURL];
     NSMutableArray *artistsArray = [[NSMutableArray alloc] init];
     
     for (FAArtist *artist in self.internalSavedArtists) {
@@ -76,7 +75,7 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
 }
 
 - (void)loadFromPersistentStore {
-    NSURL *url = [self persistentFileURL];
+    NSURL *url = [self fileURL];
     
     NSDictionary *artistsDictionary = [NSDictionary dictionaryWithContentsOfURL:url];
     
@@ -89,7 +88,7 @@ static NSString * const baseURLString = @"https://www.theaudiodb.com/api/v1/json
     }
 }
 
-- (void)searchForArtistWithName:(NSString *)name completion:(void (^)(FAArtist *artist, NSError *error))completion {
+- (void)searchWithName:(NSString *)name completion:(void (^)(FAArtist *artist, NSError *error))completion {
     
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
     NSURLComponents *components = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES];

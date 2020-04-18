@@ -16,8 +16,8 @@
 @property (readonly, nonatomic) FAArtist *currentArtist;
 
 - (void)loadFromPersistentStore;
-- (void)saveArtist:(FAArtist *)artist;
-- (void)removeArtist:(FAArtist *)artist;
-- (void)searchForArtistWithName:(NSString *)name completion:(void (^)(FAArtist *artist, NSError *error))completion;
+- (void)saveToPersistence:(FAArtist *)artist;
+- (void)removeFromPersistence:(FAArtist *)artist;
+- (void)searchWithName:(NSString *)name completion:(void (^)(FAArtist *artist, NSError *error))completion;
 
 @end
